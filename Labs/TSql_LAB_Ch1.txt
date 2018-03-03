@@ -1,0 +1,33 @@
+.echo on
+.headers on
+
+--Name: family.sql
+--Author: Steven Rhodes
+--Date: February 21, 2018
+
+drop table if exists family;
+
+create table family (
+id integer,
+name text,
+sex integer,
+role text,
+age integer
+);
+
+insert into family values (1,’Daniel’,1,’parent’,69);
+insert into family values (2,’Marie’,0,’parent’,67);
+insert into family values (3,’Danelle’,0,’child’,44);
+insert into family values (4,’Brian’,1,’child’,41);
+insert into family values (5,’Daryl’,1,’child’,40);
+insert into family values (6,’Steven’,1,’child’,30);
+
+.schema family
+
+select * from family;
+select * from family where sex = 1;
+select * from family where role like 'parent';
+select * from family where role like 'chilld
+select name from family;
+select avg(age) from family;
+select sum(age) from family;
