@@ -1,7 +1,7 @@
 .echo on
 .headers on
 
--- Name: Tsql_LAB_ch3.sql
+-- Name: Tsql_LAB_ch4.sql
 -- Author: Steven Rhodes
 -- Date: March 8, 2018
 

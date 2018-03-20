@@ -2,7 +2,7 @@
 ### T-SQL Chapter 6 Homework
 
 ### 1. What does a set operator do?
-Set operators are operators that combine rows from two query result sets
+Set operators are operators that combine rows from two query result sets (sets are groups of unique objects)
 
 ### 2. What are the general requirements of a set operator
 A set operator follows the general form of:
@@ -10,7 +10,7 @@ Input Query1
 an operator
 Input Query2
 
-Two input queries must produce results with the same number of columns and corresponding columns must have compatible data types
+Two input queries must produce results with the same number of columns and corresponding columns must have compatible data types (domain must be compatible-data type)
 
 ### 3. What is a Venn Diagram? This is not in the book.
 A Venn diagram compares two or more concepts, or items, and highlights similarities or some common shared value
@@ -25,7 +25,7 @@ See drawing in notebook
 See drawing in notebook
 
 ### 7. If SQL Server supported the INTERSECT ALL operator, what would it do?
-Duplicate rows are included in the result table after the intersect operation (returning distinct rows in both inputs)
+Duplicate rows are included in the result table after the intersect operation
 
 ### 8. Draw a Venn Diagram of the EXCEPT operator. What does it do?
 See drawing in notebook
