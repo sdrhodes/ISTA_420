@@ -2,16 +2,16 @@
 ### T-SQL Chapter 7 Homework
 
 ### 1. What is a window function?
-A window function is a function that for each row computes a scalar result based on a calculation against a subset of the rows from the underlying query
+A window function is a function that for each row computes a scalar result based on a calculation against a subset of the rows from the underlying query. An analytical function.  
 
 ### 2. What does PARTITION do?
-Partition restricts the window to the subset of rows that have the same values in the partitioning columns as in the current row
+Partition restricts the window to the subset of rows that have the same values in the partitioning columns as in the current row. Example, partition by state.
 
 ### 3. What does ORDER BY do?
-Defines ordering by giving meaning to rank
+Defines ordering by giving meaning to rank. Example: order sales by commission earned
 
 ### 4. What does ROWS BETWEEN do?
-Filters a frame or a subset of rows from the window partition between the two specified delimiters
+Filters a frame or a subset of rows from the window partition between the two specified delimiters. Upper and lower bounds.
 
 ### 5. What is a ranking window function? Why would you use it? Give an example.
 Ranking functions rank each row with respect to others in the window. Ranking might be used to sort information, such as a value
@@ -29,4 +29,4 @@ Return a value from the first and last rows in a window frame
 Aggregate window functions are used to aggregate rows in the defined window
 
 ### 10. What is a pivot table and what does it do?
-Pivot tables rotate rows to columns, and columns to rows
+Pivot tables rotate rows to columns, and columns to rows. Mashes up data into certain categories
