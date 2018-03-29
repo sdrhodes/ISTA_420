@@ -2,14 +2,20 @@
 ### T-SQL Chapter 8b Homework
 
 ### 1. The sales tax rate for a state just changed. How would you update the state sales tax table to reflect the changes? Assume that this table has an ID column, an RATE column, and a STATE column.
-		UPDATE SalesTax
+		UPDATE SalesTaxTable
 			SET rate = newDiscount
-		WHERE rate = !null;
+		WHERE StateID like 'StateYouWantToChange';
 
 ### 2. The Revenue Division has requested that you provide a report on what the actual sales taxes would have been for all orders in the past year, assuming the retroactivity of the new sales tax rate. How would you calculate this?
 
-	Select orderID, sum(rate-oldrate) as oldrate, state
-	from  salestax
+	Select SalesAmount
+	, salesid
+	, 3.5 as newrate
+	, (salesamount * newrate) as newtax,
+	sum(salesamount * newrate) as newtotal,
+	from salesforlastyear
+	where year = 2017
+	group by salesid;
 	
 
 ### 3. Explain how the proprietary assignment update command works.
