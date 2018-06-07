@@ -88,7 +88,7 @@ GO
 -- Invalid batch
 PRINT 'Second batch';
 SELECT custid FROM Sales.Customers;
-SELECT orderid FOM Sales.Orders;
+SELECT orderid FROM Sales.Orders;
 GO
 -- Valid batch
 PRINT 'Third batch';
